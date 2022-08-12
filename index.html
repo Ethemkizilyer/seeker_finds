@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arayan Bulur</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="icon" type="image/x-icon" href="/gfavicon.png">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="head"><a href="#">Gmail</a></div>
+      <div class="head"><a href="#">Images</a></div>
+      <div class="head">
+        <a href="#"><span class="material-symbols-outlined"> apps </span></a>
+      </div>
+      <div class="head-son">
+        <a href=""><i class="fa-solid fa-e"></i></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="image"><img src="logo.png" alt="" /></div>
+    <div class="input">
+      <div class="up">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="input" value=" ">
+        <a href=""><span class="material-symbols-outlined">keyboard</span></a>
+        <a href=""><img src="google-voice.png" alt="" /></a>
+      </div>
+      <div class="down">
+        <button id="asd"  >Google Search</button>
+        <button id="dsa">I'm Feeling Lucky</button>
+      </div>
+    </div>
+    <div class="orta">
+      Other Languages You Can Use Google: <a href="#">English</a>
+    </div>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="footer-üst">Turkey</div>
+      <div class="ilk2"> <a href="#"><span>🍃Carbon neutral since 2007</span></a> </div>
+      <div class="footer-alt">
+
+        <div class="alt1">
+          <a href="">About</a>
+          <a href="">Publicity</a>
+          <a href="">Business</a>
+          <a href="">How does the search work?</a>
+        </div>
+        <div class="ilk"> <a href="#"><span>🍃Carbon neutral since 2007</span></a> </div>
+        <div class="alt2">
+          <a href="">Security</a>
+          <a href="">Conditions</a>
+          <a href="">Settings</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script>
+    let search = document.getElementById("asd")
+    let arama = document.getElementById("input")
+    search.onclick = function(){
+        let url = 'https://www.google.com/search?q='+arama.value;
+        window.open(url);
+    }
+</script>
+</body>
+
+</html>
